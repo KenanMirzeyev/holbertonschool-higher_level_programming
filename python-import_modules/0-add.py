@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from add_0 import add
 
-res = add(1, 2)
-print(f"1 + 2 = {res}")
+a = 1
+b = 2
+res = add(a, b)
+print(f"{a} + {b} = {res}")
