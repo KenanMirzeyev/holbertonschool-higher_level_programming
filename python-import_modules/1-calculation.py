@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+from calculator_1 import add
+from calculator_1 import sub
+from calculator_1 import mul
+from calculator_1 import div
+
+if __name__ == "__main__":
+    a = 10
+    b = 5
+    resadd = add(a, b)
+    ressub = sub(a, b)
+    resmul = mul(a, b)
+    resdiv = div(a, b)
+    print("{} + {} = {}".format(a, b, resadd))
+    print("{} - {} = {}".format(a, b, ressub))
+    print("{} * {} = {}".format(a, b, resmul))
+    print("{} / {} = {}".format(a, b, resdiv))
+
+
