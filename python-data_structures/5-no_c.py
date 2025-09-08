@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    tmp = my_string.replace('c', '')
-    my_string = tmp.replace('C', '')
-    return my_string
+    new = ''
+    for i in my_string:
+        if i != 'c' and i != 'C':
+            new += i
+    return new
