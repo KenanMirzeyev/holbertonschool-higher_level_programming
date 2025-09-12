@@ -11,12 +11,12 @@ def update_dictionary(a_dictionary, key, value):
 
 def simple_delete(a_dictionary, key=""):
     if key in a_dictionary:
-            del a_dictionary[key]
+        del a_dictionary[key]
     return a_dictionary
 
 
 def multiply_by_2(a_dictionary):
     new_dict = {}
     for key, value in a_dictionary.items():
-         new_dict [key] = value * 2
+        new_dict[key] = value * 2
     return new_dict
