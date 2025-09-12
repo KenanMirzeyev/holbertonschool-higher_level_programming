@@ -6,4 +6,3 @@ def uniq_add(my_list=[]):
         if i == 0 or my_list[i] != my_list[i - 1]:
             uniq += my_list[i]
     return uniq
-
