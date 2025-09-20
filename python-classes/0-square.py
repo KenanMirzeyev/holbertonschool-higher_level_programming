@@ -3,4 +3,7 @@
 And
 """
 class Square():
+    """
+    A
+    """
     pass
