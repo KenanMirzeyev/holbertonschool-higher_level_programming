@@ -13,7 +13,6 @@ class Rectangle:
 
     print_symbol = "#"
 
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -51,7 +50,7 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.width + self.height)
-    
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
