@@ -8,4 +8,4 @@ def inherits_from(obj, a_class):
     """
     L
     """
-    return type(a) is not a_class
+    return isinstance(obj, a_class) and type(obj) is not a_class
