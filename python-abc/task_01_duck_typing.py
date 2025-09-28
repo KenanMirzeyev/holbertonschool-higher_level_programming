@@ -9,6 +9,7 @@ class Shape(ABC):
         """sound"""
         pass
 
+    @abstractmethod
     def perimeter(self):
         """sound"""
         pass
