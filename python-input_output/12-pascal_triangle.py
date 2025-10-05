@@ -4,6 +4,7 @@
 Returns a list of lists representing Pascal's Triangle of n
 """
 
+
 def pascal_triangle(n):
     """Generate Pascal's triangle of n rows."""
     if n <= 0:
