@@ -16,3 +16,5 @@ def pascal_triangle(n):
         # Create next row: first and last elements are 1, middle are sums of adjacent elements
         row = [1] + [prev_row[j] + prev_row[j + 1] for j in range(len(prev_row) - 1)] + [1]
         triangle.append(row)
+
+    return triangle
