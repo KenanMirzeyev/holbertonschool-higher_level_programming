@@ -38,12 +38,12 @@ class CustomObject:
             return None
 
         @classmethod
-        def deserialize(cls, filename):
-            """
-            A
-            """
-            try:
-                with open(filename, "rb") as file:
-                    return pickle.load(file)
-            except Exception:
-                return None
+    def deserialize(cls, filename):
+        """
+        A
+        """
+        try:
+            with open(filename, "rb") as file:
+                return pickle.load(file)
+        except Exception:
+            return None
