@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script that adds all arguments to a Python list,
+"""
+Script that adds all arguments to a Python list,
 and then saves them to a file in JSON format.
 """
 
