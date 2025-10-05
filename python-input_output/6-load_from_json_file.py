@@ -11,5 +11,5 @@ def load_from_json_file(filename):
     """
     A
     """
-    with open(filename, "w") as json.file:
+    with open(filename) as json.file:
         json.load(json.file)
