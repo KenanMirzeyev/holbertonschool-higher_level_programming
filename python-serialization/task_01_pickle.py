@@ -37,7 +37,7 @@ class CustomObject:
         except Exception:
             return None
 
-        @classmethod
+    @classmethod
     def deserialize(cls, filename):
         """
         A
