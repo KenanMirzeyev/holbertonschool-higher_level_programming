@@ -9,7 +9,7 @@ class a(BaseHTTPRequestHandler):
         elif self.path == '/data':
             self.handle_data()
         elif self.path == '/status':
-            self.handle_status
+            self.handle_status()
         else:
             self.handle_404()
 
@@ -23,8 +23,8 @@ class a(BaseHTTPRequestHandler):
     def handle_data(self):
         """D"""
         response_data = {
-                "name": "John"
-                "age": 30
+                "name": "John",
+                "age": 30,
                 "city": "New York"
         }
         self.send_response(200)
@@ -43,7 +43,7 @@ def run(server_class=HTTPServer, handler_class=a, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print("Starting  server  on port {}...".format(port))
-    httpd.send_forever()
+    httpd.serve_forever()
 
 if __name__ == "__main__":
     run()
