@@ -39,6 +39,14 @@ class a(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b"Endpoint not found")
 
+    def handle_status(self):
+        """Handles /status endpoint"""
+        response_data = {"status": "OK"}
+        self.send_response(200)
+        self.send_header("Content-type", "application/json")
+        self.end_headers()
+        self.wfile.write(json.dumps(response_data).encode('utf-8'))
+
 def run(server_class=HTTPServer, handler_class=a, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
