@@ -1,2 +1,5 @@
 -- co
-SHOW DATABASE second_table;
+SELECT score, name
+FROM decond_table
+ORDER BY score DESC;
+
