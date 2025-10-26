@@ -1,3 +1,3 @@
 -- co
-INSERT INTO first_table
-VALUES('');
+INSERT INTO first_table(id, name)
+VALUES(89, 'Best School');
