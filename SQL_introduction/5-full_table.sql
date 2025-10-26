@@ -1,5 +1,4 @@
 -- CO
-SHOW DATABASES;
-SELECT first_table
+SELECT *
 FROM hbtn_0c_0;
 
