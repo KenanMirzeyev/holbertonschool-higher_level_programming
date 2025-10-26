@@ -1,4 +1,4 @@
--- CO
-SELECT *
-FROM hbtn_0c_0.first_table;
+-- sql
+SHOW TABLE first_table
+FROM hbtn_0c_0;
 
