@@ -1,3 +1,4 @@
 -- co
-SHOW FROM second_table
-WHERE score >= 10;
+SELECT score
+FROM second_table
+SHOW WHERE score >= 10;
