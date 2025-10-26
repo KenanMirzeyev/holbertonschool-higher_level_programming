@@ -1,5 +1,5 @@
 -- co
 SELECT score, name
-FROM econd_table
+FROM second_table
 ORDER BY score DESC;
 
