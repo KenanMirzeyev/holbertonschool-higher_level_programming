@@ -1,5 +1,5 @@
 #!/usr/bin/node
-"""Module"""
+//AAAAAAAAA
 
 const args = process.argv.slice(2).map(Number);
 
