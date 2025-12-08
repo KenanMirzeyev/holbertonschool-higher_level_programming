@@ -1,18 +1,26 @@
 #!/usr/bin/node
-//AAAAAAAAA
 
-const args = process.argv.slice(2).map(Number);
+const len = process.argv.length;
+const nums = process.argv.slice(2).map(function (n) {
+  return parseInt(n);
+});
+const max = Math.max.apply(Math, nums);
+const min = Math.min.apply(Math, nums);
 
+if (len > 3) {
+  let i = 0;
+  let n = 0;
+  let secBig = min;
 
-if (args.length < 2) {
-  console.log(0);
-} else {
-  const max = Math.max(...args);
-  const filtered = args.filter(n => n !== max);
+  for (; i < len; ++i) {
+    n = nums[i];
 
-  if (filtered.length === 0) {
-    console.log(0);
-  } else {
-    const second = Math.max(...filtered);
-    console.log(second);
+    if (n > secBig && n < max) {
+      secBig = n;
+    }
   }
+
+  console.log(secBig);
+} else {
+  console.log(0);
+}
